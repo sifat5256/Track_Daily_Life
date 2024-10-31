@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "754316105310",
+    "project_id": "trackyourdailylife",
+    "storage_bucket": "trackyourdailylife.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754316105310:android:26c3b3d759b95d4755c6cf",
+        "android_client_info": {
+          "package_name": "com.example.track_daily_life"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjDEtFlS_WRs10c5Oues-fZLZWXaaQx7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
