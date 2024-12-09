@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 import '../controller/note_controller.dart';
-import 'note_details_screen.dart';
+import 'add_note_screen.dart';
 import 'search_result_screen.dart';
 
 
@@ -20,7 +20,7 @@ class NotesHomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Notes App'),
         centerTitle: true,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.green,
         actions: [
           IconButton(
             icon: const Icon(Icons.search),
@@ -98,6 +98,7 @@ class NotesHomePage extends StatelessWidget {
         },
       )),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green,
         onPressed: () {
           Get.to(() => NoteDetailsPage());
         },

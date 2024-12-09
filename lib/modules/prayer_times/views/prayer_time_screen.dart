@@ -1,5 +1,5 @@
 //
-// import 'package:daily_organizer_app/modules/prayer_times/controllers/prayer_time_controller.dart';
+//
 // import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
 //

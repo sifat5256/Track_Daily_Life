@@ -12,7 +12,7 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Login'),
+        title: const Text('Login'),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
@@ -22,8 +22,8 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 40), // Space at the top
-              Text(
+              const SizedBox(height: 40), // Space at the top
+              const Text(
                 'Welcome Back!',
                 style: TextStyle(
                   fontSize: 24,
@@ -31,38 +31,40 @@ class LoginScreen extends StatelessWidget {
                   color: Colors.blueAccent,
                 ),
               ),
-              SizedBox(height: 20), // Space between title and fields
+              const SizedBox(height: 20), // Space between title and fields
               TextField(
                 controller: emailController,
                 decoration: InputDecoration(
                   labelText: 'Email',
-                  labelStyle: TextStyle(color: Colors.grey),
-                  focusedBorder: OutlineInputBorder(
+                  labelStyle: const TextStyle(color: Colors.grey),
+                  focusedBorder: const OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderSide: const BorderSide(color: Colors.grey),
                   ),
                 ),
               ),
-              SizedBox(height: 16), // Space between fields
+              const SizedBox(height: 16), // Space between fields
               TextField(
                 controller: passwordController,
+
                 decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
                   labelText: 'Password',
-                  labelStyle: TextStyle(color: Colors.grey),
-                  focusedBorder: OutlineInputBorder(
+                  labelStyle: const TextStyle(color: Colors.grey),
+                  focusedBorder: const OutlineInputBorder(
                     borderSide: BorderSide(color: Colors.blueAccent, width: 2.0),
                   ),
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(12.0),
-                    borderSide: BorderSide(color: Colors.grey),
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide.none,
                   ),
                 ),
                 obscureText: true,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: () {
                   authController.login(
@@ -72,12 +74,12 @@ class LoginScreen extends StatelessWidget {
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueAccent, // Background color
-                  padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 30.0),
+                  padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 30.0),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12.0),
                   ),
                 ),
-                child: Text(
+                child: const Text(
                   'Login',
                   style: TextStyle(fontSize: 18),
                 ),
@@ -87,7 +89,7 @@ class LoginScreen extends StatelessWidget {
                 onPressed: () {
                   Get.to(() => SignUpScreen());
                 },
-                child: Text(
+                child: const Text(
                   'Don\'t have an account? Sign Up',
                   style: TextStyle(
                     color: Colors.blueAccent,
@@ -96,7 +98,7 @@ class LoginScreen extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 40), // Space at the bottom
+              const SizedBox(height: 40), // Space at the bottom
             ],
           ),
         ),

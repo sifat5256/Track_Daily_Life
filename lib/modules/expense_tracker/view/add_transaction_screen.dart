@@ -28,7 +28,7 @@ class AddTransactionScreen extends StatelessWidget {
                   clipper: HeaderClipper(),
                   child: Container(
                     height: 300,
-                    color: Colors.deepPurple,
+                    color: Colors.green,
                     padding: const EdgeInsets.symmetric(vertical: 50.0),
                     alignment: Alignment.center,
                     child: Column(

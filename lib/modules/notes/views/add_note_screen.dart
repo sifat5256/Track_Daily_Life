@@ -48,7 +48,10 @@ class _NoteDetailsPageState extends State<NoteDetailsPage> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.index == null ? 'Add Note' : 'Edit Note'),
+        backgroundColor: Colors.green,
+        title: Text(widget.index == null ? 'Add Note' : 'Edit Note', style: TextStyle(
+            color: Colors.white,fontSize: 22,fontWeight: FontWeight.w600
+        ),),
         actions: [
           IconButton(
             icon: const Icon(Icons.save),
@@ -70,13 +73,13 @@ class _NoteDetailsPageState extends State<NoteDetailsPage> {
               ),
               const SizedBox(height: 10),
               TextField(
-                maxLength: 6,
+
                 controller: contentController,
                 decoration: const InputDecoration(
                   labelText: 'Content',
                   border: OutlineInputBorder(),
                 ),
-                maxLines: 6,
+                maxLines: 15,
               ),
               const SizedBox(height: 20),
               const Text('Select Color:'),
@@ -98,13 +101,29 @@ class _NoteDetailsPageState extends State<NoteDetailsPage> {
                 }).toList(),
               ),
               const SizedBox(height: 30),
-              ElevatedButton(
-                onPressed: _saveNote,
-                child: const Text("Save"),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.green,
+              InkWell(
+                onTap: _saveNote,
+                child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.green
+                  ),
+                  child: const Center(child: Text("Save Note",
+
+                    style: TextStyle(
+                    color: Colors.white,fontSize: 16,fontWeight: FontWeight.w600
+                  ),)),
                 ),
               ),
+              // ElevatedButton(
+              //   onPressed: _saveNote,
+              //   child: const Text("Save"),
+              //   style: ElevatedButton.styleFrom(
+              //     backgroundColor: Colors.green,
+              //   ),
+              // ),
             ],
           ),
         ),

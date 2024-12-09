@@ -108,12 +108,12 @@ class ChartScreen extends StatelessWidget {
             BarChartRodData(
               toY: expenseValue,
               color: Colors.red,
-              width: 15,
+              width: 20,
             ),
             BarChartRodData(
               toY: incomeValue,
               color: Colors.green,
-              width: 15,
+              width: 20,
             ),
           ],
         ),

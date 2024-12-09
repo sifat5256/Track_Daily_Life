@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:track_daily_life/auth/auth_service.dart';
 import 'package:track_daily_life/auth/log_in.dart';
 import 'package:track_daily_life/home_screen.dart';
+import 'package:track_daily_life/modules/habit_Track/view/habit_home.dart';
 
 import 'auth/logIn.dart';
 
@@ -23,6 +24,8 @@ class MyApp extends StatelessWidget {
       title: 'Daily Organize',
       debugShowCheckedModeBanner: false,
       home: LoginPage()
+
+     // home: HabitTrackerGrid() ,
     );
   }
 }

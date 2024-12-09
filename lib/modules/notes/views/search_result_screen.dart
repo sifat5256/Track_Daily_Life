@@ -8,7 +8,7 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 import '../controller/note_controller.dart';
-import 'note_details_screen.dart';
+import 'add_note_screen.dart';
 
 
 class SearchResultsPage extends StatelessWidget {
