@@ -70,6 +70,7 @@ class NoteController extends GetxController {
         String content = note['content'].toLowerCase();
         return title.contains(query.toLowerCase()) || content.contains(query.toLowerCase());
       }).toList());
+
     }
   }
 

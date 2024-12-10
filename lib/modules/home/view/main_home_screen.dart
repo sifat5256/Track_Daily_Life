@@ -111,25 +111,46 @@ class MainHomeScreen extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  CircleAvatar(child: Icon(Icons.person)),
-                  SizedBox(width: 4),
+                  CircleAvatar(
+                    radius: 26, // Adjust the size
+                    backgroundImage: AssetImage('lib/utils/assets/boy.png'),
+                  ),
+
+                  SizedBox(width: 10),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         "Welcome!",
-                        style: TextStyle(
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
                           color: Colors.black,
-                          fontSize: 17,
-                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        //  fontWeight: FontWeight.bold,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black38,
+                              blurRadius: 4,
+                              offset: Offset(1, 2),
+                            ),
+                          ],
                         ),
                       ),
                       Text(
-                        "$name!",
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 19,
+                        "$name",
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.bold,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black38,
+                              blurRadius: 4,
+                              offset: Offset(1, 2),
+                            ),
+                          ],
                         ),
                       ),
                     ],

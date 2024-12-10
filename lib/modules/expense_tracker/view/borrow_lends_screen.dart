@@ -295,7 +295,7 @@ class _BorrowLendScreenState extends State<BorrowLendScreen>
 
                 SummaryCard(
                   title: "\$${_calculateTotalLent()}",
-                  subtitle: 'Total Borrowed:',
+                  subtitle: 'Total Lent:',
                   backgroundColor: Colors.redAccent.shade100,
                   icon: Icons.attach_money_outlined,
                   textColor: Colors.red.shade900,

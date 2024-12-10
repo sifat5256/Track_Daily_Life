@@ -13,7 +13,10 @@ class ChartScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Expense Chart')),
+      appBar: AppBar(
+          title: Text('Expense Chart'),
+        backgroundColor: Colors.green,
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: BarChart(
