@@ -37,14 +37,13 @@ class _NoteDetailsPageState extends State<NoteDetailsPage> {
   @override
   Widget build(BuildContext context) {
     final List<Color> colors = [
-
-      Colors.red,
-      Colors.green,
       Colors.blue,
-      Colors.yellow,
-      Colors.orange,
-      Colors.white,
+      Colors.greenAccent,
+      Colors.lightGreenAccent,
+      Colors.redAccent,
+      Colors.deepOrangeAccent  // White (Background/Text)
     ];
+
 
     return Scaffold(
       appBar: AppBar(

@@ -28,6 +28,7 @@ class MainHomeScreen extends StatelessWidget {
 
     return Scaffold(
       backgroundColor: Colors.greenAccent.shade100,
+
       body: Column(
         children: [
           _buildHeader(context, formattedDate, formattedDay),
@@ -44,7 +45,7 @@ class MainHomeScreen extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Track your Regular Habit",
                 style: TextStyle(
                   fontSize: 18,
@@ -111,20 +112,20 @@ class MainHomeScreen extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  CircleAvatar(
+                  const CircleAvatar(
                     radius: 26, // Adjust the size
                     backgroundImage: AssetImage('lib/utils/assets/boy.png'),
                   ),
 
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         "Welcome!",
                         textAlign: TextAlign.center,
-                        style: const TextStyle(
+                        style: TextStyle(
                           color: Colors.black,
                           fontSize: 18,
                         //  fontWeight: FontWeight.bold,

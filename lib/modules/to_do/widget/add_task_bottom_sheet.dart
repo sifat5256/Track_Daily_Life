@@ -207,10 +207,10 @@ class _AddTaskBottomSheetState extends State<AddTaskBottomSheet>
       runSpacing: 4.0,
       children: <Color>[
         Colors.blue,
-        Colors.green,
-        Colors.red,
-        Colors.orange,
-        Colors.purple
+        Colors.greenAccent,
+        Colors.lightGreenAccent,
+        Colors.redAccent,
+        Colors.deepOrangeAccent
       ].map((Color color) {
         return ChoiceChip(
           selected: selectedColor == color,

@@ -98,7 +98,7 @@ class ToDoHomePage extends StatelessWidget {
 
   Widget _buildTaskCountCard(String title, int count) {
     return Card(
-      color: Colors.greenAccent.shade400,
+      color: Colors.cyanAccent,
       elevation: 5,
       child: SizedBox(
         width: ResponsiveSize.width(80), // Example width
